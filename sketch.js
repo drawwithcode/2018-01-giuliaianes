@@ -9,9 +9,6 @@ function setup() {
 function draw() {
 	background(227, 236, 235);
 
-
-
-
 	//lightright
 	fill(200);
 	stroke(200);
@@ -21,18 +18,21 @@ function draw() {
 	ellipse(330, 370-50, 70, 30);
 	noStroke();
 	fill(241, 246, 179, 70)
-	quad(330, 385-50, 400, 385-50, 180, 0, 50, 0);
+	//quad(330, 385-50, 400, 385-50, 180, 0, 50, 0);
+	quad(330, 385-50, 400, 385-50, mouseX, 0, mouseY, 0);
 
 	ellipseMode(CENTER);
 	stroke(62,90,166);
 	strokeWeight(1.5);
 	fill(195,223,247);
 
+
 	//Body
 	rect(200, 225, 100, 100);
 	fill(127,162,216);
 	quad(190, 315, 200, 325, 200, 225, 190, 215); //parte sx
 	quad(190, 215, 200, 225, 300, 225, 290, 215); //parte sopra
+
 
 	//BodySmall
 	fill(195,223,247);
@@ -143,25 +143,8 @@ function draw() {
 	ellipse(100, 370, 70, 30);
 	noStroke();
 	fill(247, 216, 215, 70),
-	quad(100, 385, 170, 385, 430, 0, 300, 0);
+	//quad(100, 385, 170, 385, 430, 0, 300, 0);
+	quad(100, 385, 170, 385, mouseX, 0, mouseY, 0);
 
 
-
-
-
-
-
-
-
-
-
-
-
-	//Wheel
-	//ellipse(250, 465, 70, 70);
-
-
-
-	//Head
-	//ellipse(250, 140, 90, 90);
 }
